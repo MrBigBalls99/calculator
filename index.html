@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор ипотеки</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор ипотеки</h1>
+        <div class="form-group">
+            <label for="total_cost">Стоимость жилья (руб):</label>
+            <input type="number" id="total_cost" required>
+        </div>
+        <div class="form-group">
+            <label for="down_payment">Первоначальный взнос (руб):</label>
+            <input type="number" id="down_payment" required>
+        </div>
+        <div class="form-group">
+            <label for="annual_interest_rate">Годовая процентная ставка (%):</label>
+            <input type="number" id="annual_interest_rate" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="years">Срок кредита (лет):</label>
+            <input type="number" id="years" required>
+        </div>
+        <button onclick="calculateMortgage()">Рассчитать</button>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
